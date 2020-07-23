@@ -1,14 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Counter from './count';
+import classes from './App.module.css';
+import CustomRoute from './Components/CustomRoute';
+import { HashRouter, Switch, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './Store';
+//import Home from './Home';
+import TicTacToe from './TicTacToe';
 import ToDo from './ToDo';
-import Todo from './ToDo';
+import Counter from './Counter';
+const App = () => {
 
-const App=()=> {
   return (
-       <Counter />
-      //<Todo />
+    <Provider store={store}>
+      <HashRouter>
+        <div className={classes.App}>
+          <Switch>
+          <CustomRoute path="/TicTacToe" component={TicTacToe} />
+            <CustomRoute path="/ToDo" component={ToDo} />
+            <CustomRoute path="/Counter" component={Counter} />
+            <Route path="/">
+            <CustomRoute path="/TicTacToe" component={Counter} />
+            </Route>
+          </Switch>
+        </div>
+      </HashRouter>
+    </Provider>
   );
 }
 
