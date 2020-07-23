@@ -1,0 +1,51 @@
+.MainDiv{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+}
+.DisplayDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+    height: 25%;
+}
+.DisplayDiv p{
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: 2em;
+}
+.ButtonDiv{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+}
+.Button{
+    padding: 5px;
+    width: 7%;
+    width: 120px;
+    border: 2px solid black;
+    justify-content: center center;
+    align-self: center;
+    background-color: #a9a9a9;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
