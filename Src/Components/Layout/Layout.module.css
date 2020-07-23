@@ -1,0 +1,17 @@
+.MainDiv{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../Assets/abstract-background-carpentry-construction-268976.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.Content{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
