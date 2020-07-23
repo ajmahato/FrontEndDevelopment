@@ -1,0 +1,72 @@
+.MainDiv{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: white!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.SquareDiv{
+    font-weight: bold;
+    font-size: 2em;
+    border: 1px solid black;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: red;
+}
+.Game{
+    height: 45%;
+    width: 45%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+.BoardDiv{
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    display: grid;
+    background-color: black;
+    grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+}
+.InfoDiv{
+    height: 100%;
+    width: 100%;
+    margin-left: 5%;
+    color: black!important;
+    background-color: white;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.InfoDiv span{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+.Button{
+    height: 10%;
+    width: 40%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding: 1%;
+    position: relative;
+    top: 65%;
+    left: 30%;
+}
+.MainDiv p{
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    color: white!important;
+    font-size: 2em;
+    font-weight:bold;
+}
