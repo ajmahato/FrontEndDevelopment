@@ -7,18 +7,16 @@ All the appications in this repository has been made with the best industry prac
 
 Up and Down Counter is a basic counter application where on the click of a button the count value can either be incremented or decremented.
 
-```Up and Down Counter
 
 ![](https://...snip4.jpg)
-``
-### Up and Down Counter
 
-Up and Down Counter is a basic counter application where on the click of a button the count value can either be incremented or decremented.
+### ToDo List
 
-```Up and Down Counter
+ToDo List is a simple application to temporarily store the values entered by the user. Currently I have fixed the maximum number of items in the list to five but it can be easily removed by just removing the if condition.
 
-![Image]()
-``
+
+![](https://...snip6.jpg)
+
 ### Up and Down Counter
 
 Up and Down Counter is a basic counter application where on the click of a button the count value can either be incremented or decremented.
