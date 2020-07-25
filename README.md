@@ -9,7 +9,7 @@ Up and Down Counter is a basic counter application where on the click of a butto
 
 ```Up and Down Counter
 
-![Image]('./snip4.JPG')
+![](snip4.JPG)
 ``
 ### Up and Down Counter
 
