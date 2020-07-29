@@ -9,7 +9,7 @@ All the appications in this repository has been made with the best industry prac
 Up and Down Counter is a basic counter application where on the click of a button the count value can either be incremented or decremented.
 
 `` Counter
-![Image](https://..snip4.jpg)
+![Image](https://...snip4.jpg)
 ``
 
 ### ToDo List
