@@ -14,6 +14,9 @@ const Header=(props)=>{
     const ToDoClick=()=>{
         props.history.push('/ToDo');
     }
+    const Calculator=()=>{
+        props.history.push('/Calculator');
+    }
     return(
         <div className={classes.MainDiv}>
             <div className={classes.Link}>
@@ -21,6 +24,7 @@ const Header=(props)=>{
                     <li onClick={CounterClick}>Counter</li>
                     <li onClick={TicTacToeClick}>Tic-Tac-Toe</li>
                     <li onClick={ToDoClick}>ToDo List</li>
+                    <li onClick={Calculator}>Calculator</li>
                 </ul>
             </div>
         </div>
