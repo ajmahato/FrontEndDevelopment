@@ -1,0 +1,22 @@
+.MainDiv{
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    display: grid;
+    grid-template: repeat(5, 1fr)/ repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+
+.ButtonDiv{
+    height: 50px;
+    width: 45%;
+    margin: 2%;
+    justify-self: center;
+    font-weight: bold;
+    font-size: 2em;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+}
