@@ -8,6 +8,7 @@ import store from './Store';
 import TicTacToe from './TicTacToe';
 import ToDo from './ToDo';
 import Counter from './Counter';
+import Calculator from './Calculator/Pages';
 const App = () => {
 
   return (
@@ -18,8 +19,9 @@ const App = () => {
           <CustomRoute path="/TicTacToe" component={TicTacToe} />
             <CustomRoute path="/ToDo" component={ToDo} />
             <CustomRoute path="/Counter" component={Counter} />
+            <CustomRoute path="/Calculator" component={Calculator} />
             <Route path="/">
-            <CustomRoute path="/TicTacToe" component={Counter} />
+            <CustomRoute path="/Calculator" component={Calculator} />
             </Route>
           </Switch>
         </div>
