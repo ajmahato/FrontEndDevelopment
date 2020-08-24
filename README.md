@@ -22,3 +22,8 @@ A simple rendition of the Tic-Tac-Toe game which follows the example given in th
 
 ![snip5](https://user-images.githubusercontent.com/37789394/88791989-3913ad80-d1b8-11ea-8230-94029229878b.jpg)
 
+
+### Calculator
+
+A simple calculator application for everyday use.
+![snip5](https://user-images.githubusercontent.com/37789394/91029504-76832380-e61c-11ea-8440-d06f8525746c.PNG)
