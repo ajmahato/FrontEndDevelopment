@@ -1,0 +1,11 @@
+.MainDiv{
+    height: 96%;
+    width: 96%;
+    color: black;
+    background-color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    justify-self: center;
+    cursor: pointer;
+    margin: 2%;
+}
