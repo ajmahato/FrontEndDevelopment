@@ -19,10 +19,18 @@ const Todo=(props)=>{
     }
     const addClick= useCallback((e)=>{
         const value= [name, designation];
+        if(name ==="" || designation=== ""){
+            alert("Please Enter correct value");
+            setName("");
+            setDesignation("");
+            return;
+        }
         const temp= count+1;
         if(temp<=5){
             setCount(temp)
             setList([...list, value]);
+            setName("");
+            setDesignation("");
         }
     },)
     return(
@@ -31,13 +39,11 @@ const Todo=(props)=>{
                 <div className={classes.Write}>
                     <div className={classes.InputDiv}>
                         <input type="text" value={name}
-                        defaultValue="Name"
                         onChange={nameChangeHandler}
                         placeholder="Name"/>
                     </div>
                     <div className={classes.InputDiv}>
                         <input type="text" value={designation}
-                        defaultValue="Designation"
                         onChange={designationChangeHandler}
                         placeholder="Designation"/>
                     </div>
