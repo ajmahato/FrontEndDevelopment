@@ -6,7 +6,6 @@ import Keypad from '../Component/Keypad';
 import {withRouter} from 'react-router-dom';
 
 const Calculator=(props)=>{
-    console.log(props);
     const[value, setValue]= useState('');
     const dispatch= useDispatch();
     const clickHandler= useCallback((val)=>{
@@ -26,20 +25,21 @@ const Calculator=(props)=>{
             var oldValue= value;
             oldValue= oldValue+val;
             setValue(oldValue);
-            console.log(value);
         }
         
     },[setValue, value, dispatch])
     
     
     const backspace=()=>{
-        const back= value;
-        back= back.slice(0,-1);
-        setValue(back);
+        if(value!==''){
+            var back= value;
+            back= back.slice(0,-1);
+            setValue(back);     
+        }
     }
     
     const Square=()=>{
-        const back= value;
+        var back= value;
         back= back*back;
         setValue(back);
     }
@@ -51,14 +51,11 @@ const Calculator=(props)=>{
         }
         else{
             checkResult= value;
-            console.log(checkResult);
-        }
+         }
         try{
             const result= eval(checkResult);
             // setValue((eval(checkResult) || "")+ "");
             setValue(result);
-            console.log(value);
-            console.log("evaluate");
         }
         catch(e){
             setValue("error");
