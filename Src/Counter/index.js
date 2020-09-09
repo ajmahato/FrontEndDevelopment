@@ -4,16 +4,23 @@ import {withRouter} from 'react-router-dom'
 
 const Counter=()=>{
     const [count, setCount]=useState(0);
+
     const OnIncrementClick = useCallback((e) => {
         setCount(count+1);
       }, [count]);
+
       const OnDecrementClick = useCallback((e) => {
         setCount(count-1);
     }, [count]);
+
+    const Reset= useCallback((e)=>{
+        setCount(0);
+    })
+    
     return(
         <div className={classes.MainDiv}>
             <div className={classes.DisplayDiv}>
-                <p>Counter</p>
+                <p onClick={Reset} title="Reset" className={classes.Mp}>Counter</p>
                 {count}
             </div>
             <div className={classes.ButtonDiv}>
