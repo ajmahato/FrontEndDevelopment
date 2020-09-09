@@ -62,7 +62,7 @@ const Calculator=(props)=>{
         }
     }
     const reset=()=>{
-        setValue();
+        setValue('');
     }
     return(
         <div className={classes.MainDiv}>
